@@ -9,6 +9,7 @@ var groceryItem = {
         return this.item + '' + this.stockOnHand + '' + this.isExpired;
     }
 }
+console.log('milk', 'eggs', 'butter', 'cheese')
 
 var groceryItem = {
     item: 'eggs',
@@ -36,3 +37,4 @@ var groceryItem = {
         return this.item + '' + this.stockOnHand + '' + this.isExpired;
     }
 }
+console.log('This is a grocery store list')
