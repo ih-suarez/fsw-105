@@ -4,7 +4,10 @@ var groceryCart = ['milk', 'eggs', 'butter', 'cheese']
 var groceryItem = {
     item: 'milk',
     stockOnHand: 50,
-    isExpired: false
+    isExpired: false,
+    stock: function () {
+        return this.item + '' + this.stockOnHand + '' + this.isExpired;
+    }
 }
 
 var groceryItem = {
