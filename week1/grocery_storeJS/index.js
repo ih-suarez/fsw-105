@@ -5,11 +5,10 @@ var groceryCart = ['milk', 'eggs', 'butter', 'cheese']
 var shopper = {
     shopperFirstName: 'Ismael',
     shopperLastName: 'Suarez',
-    //shopperItems: '',
     orderReady: false,
-    //customerReceipt: function() {
-       // return this.shopperFirstName + '' + this.shopperLastName + '' + this.shopperItems;
+    customerReceipt: function() {
+        return this.shopperFirstName + '' + this.shopperLastName;
     }
-// };
+};
 
 console.log('grocery store list');
