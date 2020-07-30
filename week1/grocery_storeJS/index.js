@@ -1,14 +1,13 @@
-// grocery list
-var groceryCart = ['milk', 'eggs', 'butter', 'cheese']
 
 // shopper information
 var shopper = {
     shopperFirstName: 'Ismael',
     shopperLastName: 'Suarez',
+    groceryCart: ['milk', 'eggs', "butter", "cheese"],
     orderReady: false,
     customerReceipt: function() {
-        return this.shopperFirstName + '' + this.shopperLastName;
+        return this.shopperFirstName + ' ' + this.shopperLastName + ' '+ this.groceryCart;
     }
 };
 
-console.log('grocery store list');
+console.log(shopper.customerReceipt());
