@@ -1,5 +1,8 @@
+// Loop Practice
+
 
 // People
+
 
 var movieCustomers = [
     {
@@ -67,6 +70,7 @@ for(var i = 0; i < 101; i++){
 };
 
 // Extra Credit
+
 
 // I would appreciate a hint for figuring out how to find if lights are 'on'/'off' 
 // while using nested arrays.
