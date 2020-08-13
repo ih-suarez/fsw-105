@@ -10,11 +10,11 @@ just fix the existing ones.
 
 var enemies = ["Lex", "Batman", "Darkside", "Brainiac", "General Zod", "Doomsday"];
 
-function whoWins(isThereKryptonite, enemyName){
+function whoWins(isThereKryptonite, enemies){
     if (isThereKryptonite){
-        return "Superman beats " +enemyName+ ", of course"
+        return "Superman beats " + enemies + ", of course"
     } else {
-        return "Depends on how quick Superman can get rid of the Kryptonite." + enemyName + "could possibly win this one.";
+        return "Depends on how quick Superman can get rid of the Kryptonite." + enemies + "could possibly win this one.";
         }
     };
 
@@ -30,9 +30,10 @@ for (var i = 0; i < enemies.length; i++){
 
 function isLoisAttractedToMe(){
     // 1 is not at all attracted, 10 is "super" attracted...
-    return Math.floor((Mat.random() * 10) + 1)
+    return  Math.floor((Mat.random() * 10) + 1),
+        console.log(isLoisAttractedToMe());  
 };
-consol.log(isLoisAttractedToMe());
+
 
 var clarkKent = true;
 var superman = false;
