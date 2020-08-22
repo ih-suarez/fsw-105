@@ -34,11 +34,11 @@ personTwo.age >= 18 ? console.log('They can go!') : console.log('Nope, you can n
 
 personOne.name.charAt() === 'B' ? console.log(personOne.name + ' ' + 'can go in') : console.log('You can not go in!');
 
-personOne.age >= 18 && personOne.name.charAt() === 'B' ? console.log(personOne.name + ' '+ 'can go in') : console.log('You can not go in!');
+personOne.age >= 18 && personOne.name.charAt(0) === 'B' ? console.log(personOne.name + ' '+ 'can go in') : console.log('You can not go in!');
 
 personTwo.name.charAt() === 'B' ? console.log(personTwo.name + ' ' + 'can go in') : console.log('You can not go in!');
 
-personTwo.age >= 18 && personTwo.name.charAt() === 'B' ? console.log(personTne.name + ' '+ 'can go in') : console.log('You can not go in!');
+personTwo.age >= 18 && personTwo.name.charAt() === 'B' ? console.log(personTwo.name + ' ' + 'can go in') : console.log('You can not go in!');
 
 
 // Silver Medal
@@ -62,6 +62,7 @@ switch(true){
  
 // Going For Gold
 
+// Ternary
 
 typeof dog === 'string' ? console.log('This is a string') : console.log('Not a string');
 
@@ -77,5 +78,3 @@ dog ? console.log('Defined') : console.log('undefined');
 var myNumber = 6894
 
 myNumber % 2 == 0 ? console.log('It is even') : console.log('It is odd');
-
-

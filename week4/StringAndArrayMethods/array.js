@@ -1,3 +1,6 @@
+// Array Method Exercise
+
+
 var fruit = ['Banana', 'Apple', 'Orange', 'Watermelon'];
 
 var vegetables = ['Carrot', 'Tomato', 'Pepper', 'Lettuce'];
