@@ -74,7 +74,10 @@ runForLoop(['cat', 'dog'])
 
                 /*
                 * * Write Function That Takes Name, Last Name And Age And Returns A Sting
+                *
+                * * Using Template Literals to Build helloString
                 */
+
                 const nameAndString = helloString => {
                     return (`Hey, ${firstName = 'John'} ${lastName = 'Doe'} how does it feel to be 80?`)
                 }
