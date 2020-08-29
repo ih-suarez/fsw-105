@@ -30,13 +30,13 @@ function dividing(number1, number2){
 
 // asking for operation 
 
-let exiting = false;
+let quiting = false;
 
-while(exiting === false) {
+while(quiting === false) {
     let enteredOperator = readline.question('What Operation Do You Want To Perform? add/sub/mul/div/quit:');
 if(enteredOperator === 'quit'){
     console.log('You have just used a Javascript calculator.');
-    exiting = true;
+    quiting = true;
 } else {
     let number1 = readline.questionInt('First Number: ');
     let number2 = readline.questionInt('Second Number: ');
