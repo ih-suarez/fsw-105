@@ -73,15 +73,15 @@ runForLoop(['cat', 'dog'])
                 console.log(multiplication(20, 5));
 
                 /*
-                * * Write Function That Takes Name, Last Name And Age And Returns A Sting
+                * * Write a printString Function That Takes Name, Last Name And Age And Returns A Sting
                 *
-                * * Using Template Literals to Build helloString
+                * * Using Template Literals to Build 
                 */
 
-                const nameAndString = helloString => {
-                    return (`Hey, ${firstName = 'John'} ${lastName = 'Doe'} how does it feel to be 80?`)
+                const nameAndString = (firstName = 'Jane', lastName = 'Doe', age = 100) => {
+                    return (`Hey, ${firstName} ${lastName} how does it feel to be ${age}?`)
                 }
-                console.log(nameAndString());
+                console.log(nameAndString('Ismael', 'Suarez', 77));
 
                     /*
                     * * Use Short Hand Syntax To Make The Filter Take Up One Line   
@@ -113,12 +113,12 @@ runForLoop(['cat', 'dog'])
                         * * Write A Function That Takes  Location and Name Parameters and Outputs A String
                         */
 
-                        const returnNameAndLocation = welcomeString =>{
-                        return `Hello ${visitorsName = 'John'}! 
+                        const returnNameAndLocation = (visitorsName = 'Jane' , vacationLocation = 'Puerto Rico') =>{
+                        return `Hello ${visitorsName}! 
                        
-Welcome to ${vacationLocation = 'United States'}.
+Welcome to ${vacationLocation}!
                         
-I hope you enjoy your stay. Please ask the president of ${vacationLocation = 'United States'} if you need anything.`
+I hope you enjoy your stay. Please ask any of our staff in ${vacationLocation} if you need anything.`
                         }
                        
                         
