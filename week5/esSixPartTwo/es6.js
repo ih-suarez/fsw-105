@@ -120,7 +120,5 @@ Welcome to ${vacationLocation}!
                         
 I hope you enjoy your stay. Please ask any of our staff in ${vacationLocation} if you need anything.`
                         }
-                       
-                        
-                        console.log(returnNameAndLocation());
+                        console.log(returnNameAndLocation('Ashley', 'Costa Rica'));
                     
