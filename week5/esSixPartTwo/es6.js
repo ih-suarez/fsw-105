@@ -74,51 +74,57 @@ runForLoop(['cat', 'dog'])
 
                 /*
                 * * Write a printString Function That Takes Name, Last Name And Age And Returns A Sting
-                *
-                * * Using Template Literals to Build 
                 */
-
-                const nameAndString = (firstName = 'Jane', lastName = 'Doe', age = 100) => {
+                const printString = (firstName, lastName, age) => {
                     return (`Hey, ${firstName} ${lastName} how does it feel to be ${age}?`)
                 }
-                console.log(nameAndString('Ismael', 'Suarez', 77));
-
-                    /*
-                    * * Use Short Hand Syntax To Make The Filter Take Up One Line   
-                    */
-                    
-                    const animals = [
-                        {
-                            type: 'dog',
-                            name: 'theodore'
-                        },
-                        {
-                            type: 'cat',
-                            name: 'whiskers'
-                        },
-                        {
-                        type: 'pig',
-                        name: 'piglette'
-                        },
-                        {
-                        type: 'dog',
-                        name:'sparky'
-                        }
-                        ];
+                console.log(printString('Ismael', 'Suarez', 77));
                 
-                        const filterForDog = animals.filter(animal => animal.type === 'dog')
-                        console.log(filterForDog)
+                    /*
+                    * * Using Template Literals to Build 
+                    */
+
+                    const nameAndString = (firstName = 'Jane', lastName = 'Doe', age = 100) => {
+                        return (`Hey, ${firstName} ${lastName} how does it feel to be ${age}?`)
+                    }
+                    console.log(nameAndString('Ismael', 'Suarez', 77));
 
                         /*
-                        * * Write A Function That Takes  Location and Name Parameters and Outputs A String
+                        * * Use Short Hand Syntax To Make The Filter Take Up One Line   
                         */
-
-                        const returnNameAndLocation = (visitorsName = 'Jane' , vacationLocation = 'Puerto Rico') =>{
-                        return `Hello ${visitorsName}! 
-                       
-Welcome to ${vacationLocation}!
                         
-I hope you enjoy your stay. Please ask any of our staff in ${vacationLocation} if you need anything.`
-                        }
-                        console.log(returnNameAndLocation('Ashley', 'Costa Rica'));
+                        const animals = [
+                            {
+                                type: 'dog',
+                                name: 'theodore'
+                            },
+                            {
+                                type: 'cat',
+                                name: 'whiskers'
+                            },
+                            {
+                            type: 'pig',
+                            name: 'piglette'
+                            },
+                            {
+                            type: 'dog',
+                            name:'sparky'
+                            }
+                            ];
                     
+                            const filterForDog = animals.filter(animal => animal.type === 'dog')
+                            console.log(filterForDog)
+
+                            /*
+                            * * Write A Function That Takes  Location and Name Parameters and Outputs A String
+                            */
+
+                            const returnNameAndLocation = (visitorsName = 'Jane' , vacationLocation = 'Puerto Rico') =>{
+                            return `Hello ${visitorsName}! 
+                        
+Welcome to ${vacationLocation}!
+                            
+I hope you enjoy your stay. Please ask any of our staff in ${vacationLocation} if you need anything.`
+                            }
+                            console.log(returnNameAndLocation('Ashley', 'Costa Rica'));
+                        
