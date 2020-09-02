@@ -76,7 +76,7 @@ runForLoop(['cat', 'dog'])
                 * * Write a printString Function That Takes Name, Last Name And Age And Returns A Sting
                 */
                 const printString = (firstName, lastName, age) => {
-                    return (`Hey, ${firstName} ${lastName} how does it feel to be ${age}?`)
+                    return 'Hey, ' + firstName + ' ' + lastName + 'how does it feel to be ' + age
                 }
                 console.log(printString('Ismael', 'Suarez', 77));
                 
@@ -127,4 +127,3 @@ Welcome to ${vacationLocation}!
 I hope you enjoy your stay. Please ask any of our staff in ${vacationLocation} if you need anything.`
                             }
                             console.log(returnNameAndLocation('Ashley', 'Costa Rica'));
-                        
