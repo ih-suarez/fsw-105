@@ -11,13 +11,17 @@
         /*
          * * Constructor Function For Employees
          */
-        
-        function Employee(name, jobTitle, salary, status = 'Full Time'){
+        class Employee {
+            constructor(name, jobTitle, salary, status = 'Full Time'){
             this.name = name
             this.jobTitle = jobTitle
             this.salary = salary
-            this.status = status
+            this.status = status 
                 listOfEmployees.push(this)
+            }
+            printEmployeeForm() {
+                console.log(`First Name: ${this.name}, Job Title: ${this.jobTitle}, Salary: ${this.salary}, Status: ${this.status}`)
+            }
         };
 
             /*
@@ -32,9 +36,10 @@
                  * * .printEmployeeForm Method
                  */
 
-                Employee.prototype.printEmployeeForm = function() {
-                    console.log(`First Name: ${this.name}, Job Title: ${this.jobTitle}, Salary: ${this.salary}, Status: ${this.status}`)
-                };
+                // Employee.prototype.printEmployeeForm = function() {
+                //     console.log(`First Name: ${this.name}, Job Title: ${this.jobTitle}, Salary: ${this.salary}, Status: ${this.status}`)
+                // };
+                
                     /*
                      * * Loops to Console Log The .printEmployeeForm (Using For Loop and .forEach())
                      */
