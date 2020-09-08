@@ -4,11 +4,13 @@ let escaped = false,
         hasKey = false,
             isPlayerAlive = true
 
-let playerReady = readline.question('Enter Any Key To Enter The Room, The Door Will Be Locked Behind You. There will Be Options Listed When You Enter ')
+let playerReady = readline.question('Enter Any Key To Enter The Room ')
+
+console.log('The Door Locks Behind You. In The Middle Of The Room There Was A List... It Said')
 
 while(isPlayerAlive){
     optionSelected = readline.keyInSelect(['put your hand in hole', 'look for the key', 'open the door'], 'These Are Your Options, What will You Choose To Do?');
-        
+    
 switch(optionSelected){
         case 0:
             console.log('I bet the key is in here...........Your curiosity caused your demize. You are dead.')
