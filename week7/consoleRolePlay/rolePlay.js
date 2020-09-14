@@ -104,7 +104,6 @@ const letsMakeItPlayAGame = () => {
 while(humansHealth > 0){
     humanRestore = function() {
         humanActive = true
-        humansHealth = 50
     };
     humanRestore();
     letsMakeItPlayAGame();
