@@ -16,7 +16,7 @@ let theChosenEnemy = enemiesThatCanTakeOnHumans[Math.floor(Math.random() * enemi
 // new Enemy();
 
 let enemyAttack = Math.floor(Math.random() * 100) 
-let enemyHealth = 50;
+
 
 let lootBox = [`Space Gem`, `Reality Gem`, `Mind Gem`, `Time Gem`, `Soul Gem`, `Power Gem`];
 
@@ -37,7 +37,7 @@ let lootBox = [`Space Gem`, `Reality Gem`, `Mind Gem`, `Time Gem`, `Soul Gem`, `
 let lootBag = [`Captain Americas Shield`, ` Mjölnir`];
 let lootEnemy = lootBox[Math.floor(Math.random() * lootBox.length)]
 
-const humanAttack = Math.floor(Math.random() * 100);
+let humanAttack = Math.floor(Math.random() * 100);
 
 let humansHealth = 50;
 
@@ -51,6 +51,8 @@ let humanName = readlineSync.question(`Ah... I did not see you there...How did y
     
 const letsMakeItPlayAGame = () => {
     
+    let enemyHealth = 50;
+
     const action = readlineSync.keyInSelect(thingsTheHumanCanDo, `Alright, what would you like to do?`)        
     
     if(thingsTheHumanCanDo[action] == `exit`){
@@ -86,7 +88,7 @@ const letsMakeItPlayAGame = () => {
                         
                         if(enemyHealth <= 0){
                             console.log(`You defeated ${theChosenEnemy} it seems he left ${lootEnemy} behind. `)
-                            let loot = Math.floor()
+                            let loot = Math.random()
                             if (loot <= .25){
                                 lootBag.push(lootEnemy)
                             }
