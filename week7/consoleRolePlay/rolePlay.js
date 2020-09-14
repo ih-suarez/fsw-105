@@ -79,7 +79,7 @@ const letsMakeItPlayAGame = () => {
                         break;    
                         case 'a':
                         enemyHealth -= humanAttack
-                        console.log(`Attack it is. You attck ${theChosenEnemy} worth ${humanAttack} `)
+                        console.log(`Attack it is. You attack ${theChosenEnemy} worth ${humanAttack} `)
 
                         humansHealth -= enemyAttack
                         console.log(`${theChosenEnemy} just hit you worth ${enemyAttack} `)
